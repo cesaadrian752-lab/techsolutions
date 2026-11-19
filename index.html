@@ -8,7 +8,7 @@
   <title>TechSolutions | Tecnología que responde</title>
   <link rel="icon" href="assets/marca.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="contacto.js"></script>
+  <script type="module" src="contacto.js?v=2"></script>
 </head>
 <body>
   <a class="skip" href="#principal">Saltar al contenido</a>
@@ -68,7 +68,7 @@
         <form id="contact-form" action="https://formsubmit.co/techsolutions.contactos@gmail.com" method="post">
           <div class="form-row">
             <label>Nombre<input name="name" autocomplete="name" required maxlength="100" placeholder="Tu nombre"></label>
-            <label>Correo electrónico<input name="email" type="email" autocomplete="email" required maxlength="200" placeholder="tucorreo@ejemplo.com"></label>
+            <label>Correo electrónico<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="tucorreo@ejemplo.com"></label>
           </div>
           <label>Motivo<select name="Motivo" required><option value="">Selecciona un motivo</option><option>Demostración de Geo Alert</option><option>Propuesta o colaboración</option><option>Consulta general</option></select></label>
           <label>Mensaje<textarea name="Mensaje" required rows="5" minlength="10" maxlength="2500" placeholder="Cuéntanos un poco sobre tu solicitud"></textarea></label>
@@ -76,8 +76,9 @@
           <input type="hidden" name="_subject" value="TechSolutions | Nueva solicitud">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
-          <p class="form-note">Usaremos tus datos para responder a tu solicitud. El envío se procesa mediante FormSubmit.</p>
-          <button type="submit" class="button">Enviar solicitud</button>
+          <p class="form-note">Usaremos tus datos para responder a tu solicitud. Google Public DNS verifica el dominio del correo y FormSubmit procesa el envío.</p>
+          <button type="submit" class="button" disabled>Enviar solicitud</button>
+          <noscript><p>Activa JavaScript para usar el formulario o escríbenos al correo de contacto.</p></noscript>
           <p id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
