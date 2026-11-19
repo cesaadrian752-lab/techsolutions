@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TechSolutions desarrolla prototipos de IoT y automatización. Conoce Geo Alert, nuestro proyecto de monitoreo para cinco oficinas.">
+  <meta name="theme-color" content="#10151e">
+  <title>TechSolutions | Tecnología que responde</title>
+  <link rel="icon" href="assets/marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="contacto.js"></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Saltar al contenido</a>
+  <header id="inicio" class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#inicio" aria-label="TechSolutions, inicio"><img src="assets/marca.svg" alt="" width="28" height="28">TechSolutions</a>
+      <nav aria-label="Navegación principal">
+        <a href="#empresa">Empresa</a><a href="#proyectos">Proyectos</a><a href="#preguntas">Preguntas</a><a href="#contacto" class="button button-outline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main id="principal">
+    <section class="hero" aria-labelledby="titular">
+      <div class="wrap">
+        <h1 id="titular"><span class="hero-line">Tecnología <img class="hero-image" src="assets/circuito.webp" alt="" width="960" height="378" fetchpriority="high"></span><span class="hero-line">que responde.</span></h1>
+        <div class="hero-bottom">
+          <p>Desarrollamos prototipos que integran sensores, software y automatización para observar lo que ocurre en un espacio y responder a tiempo.</p>
+          <a href="#proyectos" class="button">Conoce Geo Alert</a>
+        </div>
+      </div>
+    </section>
+    <section id="empresa" class="section company" aria-labelledby="empresa-titulo">
+      <div class="wrap split">
+        <div>
+          <h2 id="empresa-titulo">Quiénes<br>somos.</h2>
+          <p class="section-intro">TechSolutions desarrolla proyectos de IoT y automatización. Geo Alert es nuestro proyecto de monitoreo por zonas.</p>
+        </div>
+        <dl class="principles">
+          <div><dt>Misión</dt><dd>Desarrollar soluciones tecnológicas que conviertan las lecturas del entorno en información clara y acciones oportunas.</dd></div>
+          <div><dt>Visión</dt><dd>Consolidarnos como un equipo que crea tecnología conectada útil, accesible y adaptable a distintos espacios.</dd></div>
+          <div><dt>Objetivos</dt><dd><ul><li>Integrar hardware y software en prototipos que se puedan probar.</li><li>Hacer que el estado de cada zona y sus alertas sean fáciles de entender.</li><li>Documentar y validar cada prototipo antes de ampliar su alcance.</li></ul></dd></div>
+        </dl>
+      </div>
+    </section>
+    <section id="proyectos" class="section project" aria-labelledby="proyectos-titulo">
+      <div class="wrap">
+        <div class="split project-intro">
+          <div><p class="project-label">Proyectos</p><h2 id="proyectos-titulo">Geo Alert.</h2></div>
+          <p class="section-intro">Geo Alert es un prototipo de monitoreo basado en ESP32 para una maqueta de cinco oficinas. Cada zona conserva su propio estado y comparte los actuadores del sistema.</p>
+        </div>
+        <figure class="project-media">
+          <img src="assets/panel-geo-alert.webp" alt="Panel web de Geo Alert con estados de las cinco oficinas en el simulador" width="1440" height="740" loading="lazy">
+          <figcaption>Vista del simulador de Geo Alert con datos virtuales.</figcaption>
+        </figure>
+        <div class="features"><div><h3>Monitoreo por zona</h3><p>Sensores de gas, temperatura, humedad y distancia alimentan las reglas de cada oficina.</p></div><div><h3>Panel y diagnóstico</h3><p>El panel web muestra lecturas, estados y eventos recientes de las cinco oficinas.</p></div><div><h3>Respuesta ante alertas</h3><p>El prototipo utiliza señales visuales y sonoras. Puede enviar avisos por Telegram cuando se habilita la conexión.</p></div></div>
+      </div>
+    </section>
+    <section id="preguntas" class="section faq" aria-labelledby="preguntas-titulo">
+      <div class="wrap split">
+        <h2 id="preguntas-titulo">Preguntas<br>frecuentes.</h2>
+        <div class="questions"><details open><summary>¿A qué se dedica TechSolutions?</summary><p>Desarrollamos prototipos que combinan electrónica, software y automatización. Geo Alert muestra cómo aplicamos ese enfoque al monitoreo de espacios.</p></details><details><summary>¿Qué se puede ver en Geo Alert?</summary><p>El panel muestra el estado y las lecturas de cinco oficinas, además de alertas y eventos recientes. Cada oficina se supervisa de forma independiente.</p></details><details><summary>¿Se puede probar Geo Alert sin la maqueta?</summary><p>Sí. El proyecto cuenta con un simulador local para ensayar alertas, recuperaciones y desconexiones con datos virtuales. El simulador no controla el equipo físico ni envía avisos reales.</p></details><details><summary>¿Geo Alert está listo para instalarse?</summary><p>Actualmente es un prototipo de demostración. Para usarlo en un entorno real harían falta pruebas de campo y una evaluación de los requisitos del lugar.</p></details><details><summary>¿Cómo solicito una demostración o propongo un proyecto?</summary><p>Selecciona el motivo correspondiente en el formulario de contacto y cuéntanos qué te interesa explorar. Incluye tu correo para que podamos responderte.</p></details></div>
+      </div>
+    </section>
+    <section id="contacto" class="section contact" aria-labelledby="contacto-titulo">
+      <div class="wrap split">
+        <div><h2 id="contacto-titulo">Hablemos.</h2><p class="section-intro">Cuéntanos qué necesitas o solicita una demostración de Geo Alert.</p><a class="email-link" href="mailto:cesaadrian752@gmail.com">cesaadrian752@gmail.com</a></div>
+        <form id="contact-form" action="https://formsubmit.co/cesaadrian752@gmail.com" method="post">
+          <div class="form-row">
+            <label>Nombre<input name="name" autocomplete="name" required maxlength="100" placeholder="Tu nombre"></label>
+            <label>Correo electrónico<input name="email" type="email" autocomplete="email" required maxlength="200" placeholder="tucorreo@ejemplo.com"></label>
+          </div>
+          <label>Motivo<select name="Motivo" required><option value="">Selecciona un motivo</option><option>Demostración de Geo Alert</option><option>Propuesta o colaboración</option><option>Consulta general</option></select></label>
+          <label>Mensaje<textarea name="Mensaje" required rows="5" minlength="10" maxlength="2500" placeholder="Cuéntanos un poco sobre tu solicitud"></textarea></label>
+          <div hidden><label>Deja este campo vacío<input name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <input type="hidden" name="_subject" value="TechSolutions | Nueva solicitud">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <p class="form-note">Usaremos tus datos para responder a tu solicitud. El envío se procesa mediante FormSubmit.</p>
+          <button type="submit" class="button">Enviar solicitud</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="#inicio" class="wordmark"><img src="assets/marca.svg" alt="" width="28" height="28">TechSolutions</a>
+      <a href="#inicio">Volver al inicio</a>
+    </div>
+  </footer>
+</body>
+</html>
